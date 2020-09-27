@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <title>Top Anime</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/170c91c28b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="manga.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+
+    <div class="page-header text-center">
+        <h1 class='vamp'><i class="fab fa-d-and-d"></i> Top Manga</h1>
+        <a href="/favs" class="btn">My Favs</a>
+        <a href="/profile" class="btn">Anime</a>
+        <a href="/logout" class="btn">Logout</a>
+    </div>
+
+<!--Search that will be implemented in version 2-->
+    <!-- <h3 id="marginAuto"><input type="search" placeholder="Search For Anime..."></input>
+    <button><i class="fa fa-search" aria-hidden="true"></i></button></h3> -->
+
+</div>
+      <ul>
+      <% for(var i=0; i<manga.length; i++) {%>
+        <li id="manga<%= i %>">
+          <%= manga[i].listItem %>
+        </li>
+      <% } %>
+    </ul>
+
+<ol></ol>
+<script src="mainManga.js"></script>
+
+</body>
+</html>
