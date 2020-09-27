@@ -11,3 +11,6 @@
 ## Credit
 
 Modified from Scotch.io's auth tutorial
+
+![img](Anime1.png)
+![img](Anime2.png)
